@@ -1,9 +1,19 @@
 <resources>
+    <string name="app_name">DadGuide</string>
+    <string name="all_about_pad">All About Duzzle &amp; Dragons</string>
+    <string name="long_url">https://play.google.com/store/apps/details?id=info.miru.dadguide</string>
+    <string name="wite_external_storage_confirm">If you do not accept this, you can\'t use DadGuide.</string>
+    <string name="wite_external_storage_desc"><![CDATA[[Access rights]
+    Permission to save : Monster image, monster Detailed screen requires access to save.
 
-    <!--Source and patched resources are merged according to standard build rules:
-        http://tools.android.com/tech-docs/new-build-system/resource-merging -->
-
-    <!--Override app name.-->
-    <string name="app_name">Get ID (patched-app)</string>
-
+    Please allow the following permissions to use DadGuide.]]>
+    </string>
+    <string name="privacy_policy_adverising_terms_confirm">Hit confirm to continue</string>
+    <string name="privacy_policy_adverising_terms_desc">
+        DadGuide does not use your personal information.
+        It bundles some ad code by default (because PadGuide did) but disables them.
+        For more information, go to http://miru.info
+    </string>
+    <string name="news_title">DadGuide News</string>
+    <string name="contact_text_contact_us_address">tactical0retreat@gmail.com</string>
 </resources>
