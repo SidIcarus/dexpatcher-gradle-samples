@@ -2,9 +2,15 @@
 <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:contentDescription="@string/themeMainBG"
               xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
     <RadioGroup android:id="@id/util_list_btn_menu" style="@style/TopMenu">
-        <com.dnt7.padguide.widget.AutoFitRadioButton android:id="@id/util_list_btn_monster" android:text="@string/UtilTitle00" style="@style/MenuTextRadioButtonNoBG" />
-        <com.dnt7.padguide.widget.AutoFitRadioButton android:id="@id/util_list_btn_friend" android:text="@string/UtilTitle01" style="@style/MenuTextRadioButtonNoBG" />
-        <com.dnt7.padguide.widget.AutoFitRadioButton android:id="@id/util_list_btn_board" android:text="@string/UtilTitle02" style="@style/MenuTextRadioButtonNoBG" />
+        <com.dnt7.padguide.widget.AutoFitRadioButton
+            android:visibility="gone"
+            android:id="@id/util_list_btn_monster" android:text="@string/UtilTitle00" style="@style/MenuTextRadioButtonNoBG" />
+        <com.dnt7.padguide.widget.AutoFitRadioButton
+            android:visibility="gone"
+            android:id="@id/util_list_btn_friend" android:text="@string/UtilTitle01" style="@style/MenuTextRadioButtonNoBG" />
+        <com.dnt7.padguide.widget.AutoFitRadioButton
+            android:visibility="gone"
+            android:id="@id/util_list_btn_board" android:text="@string/UtilTitle02" style="@style/MenuTextRadioButtonNoBG" />
         <com.dnt7.padguide.widget.AutoFitRadioButton android:id="@id/util_list_btn_list" android:text="@string/UtilTitle03" style="@style/MenuTextRadioButtonNoBG" />
         <com.dnt7.padguide.widget.AutoFitRadioButton android:id="@id/util_list_btn_etc" android:text="@string/UtilTitle04" style="@style/MenuTextRadioButtonNoBG" />
     </RadioGroup>
