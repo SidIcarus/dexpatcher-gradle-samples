@@ -17,7 +17,13 @@
         <com.dnt7.padguide.widget.AutoFitRadioButton android:textSize="@dimen/text_size_xlarge" android:text="@string/dungeon_btn_special" style="@style/BottomMenuTextRadioButtonNoBG" />
         <com.dnt7.padguide.widget.AutoFitRadioButton android:textSize="@dimen/text_size_xlarge" android:text="@string/dungeon_btn_normal" style="@style/BottomMenuTextRadioButtonNoBG" />
         <com.dnt7.padguide.widget.AutoFitRadioButton android:textSize="@dimen/text_size_xlarge" android:text="@string/dungeon_btn_technical" style="@style/BottomMenuTextRadioButtonNoBG" />
-        <com.dnt7.padguide.widget.AutoFitRadioButton android:textSize="@dimen/text_size_xlarge" android:text="@string/dungeon_btn_coin" style="@style/BottomMenuTextRadioButtonNoBG" />
+
+        <com.dnt7.padguide.widget.AutoFitRadioButton
+            android:textSize="@dimen/text_size_xlarge"
+            android:text="@string/dungeon_btn_coin"
+            style="@style/BottomMenuTextRadioButtonNoBG"
+            android:visibility="gone"/>
+
         <com.dnt7.padguide.widget.AutoFitRadioButton android:textSize="@dimen/text_size_xlarge" android:text="@string/dungeon_btn_multi" style="@style/BottomMenuTextRadioButtonNoBG" />
     </RadioGroup>
 </LinearLayout>
