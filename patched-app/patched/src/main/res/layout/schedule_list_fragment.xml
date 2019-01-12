@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:contentDescription="@string/themeMainBG"
+              xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout style="@style/TopMenu">
+        <com.dnt7.padguide.widget.TintImageButton android:id="@id/schedule_list_btn_config" android:src="@drawable/menu_2" app:isTintAlways="true" style="@style/ImageButtonTopMenu" />
+        <RadioGroup android:orientation="horizontal" android:id="@id/schedule_list_btn_group" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <com.dnt7.padguide.widget.AutoFitRadioButton android:text="@string/main_btn_category_0" style="@style/MenuTextRadioButtonNoBG" />
+            <com.dnt7.padguide.widget.AutoFitRadioButton android:text="@string/main_btn_category_1" style="@style/MenuTextRadioButtonNoBG" />
+            <com.dnt7.padguide.widget.AutoFitRadioButton android:text="@string/main_btn_category_2" style="@style/MenuTextRadioButtonNoBG" />
+            <com.dnt7.padguide.widget.AutoFitRadioButton android:text="@string/main_btn_category_3" style="@style/MenuTextRadioButtonNoBG" />
+            <com.dnt7.padguide.widget.AutoFitRadioButton android:text="@string/main_btn_category_4" style="@style/MenuTextRadioButtonNoBG" />
+        </RadioGroup>
+    </LinearLayout>
+    <RelativeLayout android:id="@id/schedule_list_frame_content" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <TextView android:id="@id/schedule_list_txt_no_data" style="@style/ListNoDataText" />
+        <com.dnt7.padguide.widget.ScrollButtonListView android:id="@id/schedule_list_event_list" android:layout_width="fill_parent" android:layout_height="fill_parent" android:contentDescription="@string/theme" />
+        <com.dnt7.padguide.widget.ScrollButtonListView android:id="@id/schedule_list_news_list" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:contentDescription="@string/theme" />
+    </RelativeLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/bottom_menu" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <View style="@style/ContentsBottomLine" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:contentDescription="@string/themeBottomMenuBG">
+            <com.dnt7.padguide.widget.PagingCalendar android:id="@id/schedule_list_calendar" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
+            <com.dnt7.padguide.widget.TintImageButton android:id="@id/schedule_list_btn_timetable" android:src="@drawable/window_apps_icon" android:contentDescription="@string/themeSubTextColor" app:isTintAlways="true" style="@style/ImageButton" />
+            <com.dnt7.padguide.widget.TintImageButton android:id="@id/schedule_list_btn_coin_schedule" android:layout_margin="@dimen/default_space_margin" android:src="@drawable/chip_icon" android:contentDescription="@string/themeSubTextColor" app:isTintAlways="true" style="@style/ImageButton" />
+            <com.dnt7.padguide.widget.TintImageButton android:id="@id/schedule_list_btn_egg_info" android:src="@drawable/star_7_icon" android:contentDescription="@string/themeSubTextColor" app:isTintAlways="true" style="@style/ImageButton" />
+            <com.dnt7.padguide.widget.TintImageButton android:id="@id/schedule_list_btn_stamina_timer" android:src="@drawable/timer_2" android:contentDescription="@string/themeSubTextColor" app:isTintAlways="true" style="@style/ImageButton" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
