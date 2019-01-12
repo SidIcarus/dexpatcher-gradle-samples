@@ -21,7 +21,16 @@
         <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:contentDescription="@string/themeBottomMenuBG">
             <com.dnt7.padguide.widget.PagingCalendar android:id="@id/schedule_list_calendar" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0" />
             <com.dnt7.padguide.widget.TintImageButton android:id="@id/schedule_list_btn_timetable" android:src="@drawable/window_apps_icon" android:contentDescription="@string/themeSubTextColor" app:isTintAlways="true" style="@style/ImageButton" />
-            <com.dnt7.padguide.widget.TintImageButton android:id="@id/schedule_list_btn_coin_schedule" android:layout_margin="@dimen/default_space_margin" android:src="@drawable/chip_icon" android:contentDescription="@string/themeSubTextColor" app:isTintAlways="true" style="@style/ImageButton" />
+
+            <com.dnt7.padguide.widget.TintImageButton
+                android:id="@id/schedule_list_btn_coin_schedule"
+                android:layout_margin="@dimen/default_space_margin"
+                android:src="@drawable/chip_icon"
+                android:contentDescription="@string/themeSubTextColor"
+                app:isTintAlways="true"
+                style="@style/ImageButton"
+                android:visibility="gone"/>
+
             <com.dnt7.padguide.widget.TintImageButton android:id="@id/schedule_list_btn_egg_info" android:src="@drawable/star_7_icon" android:contentDescription="@string/themeSubTextColor" app:isTintAlways="true" style="@style/ImageButton" />
             <com.dnt7.padguide.widget.TintImageButton android:id="@id/schedule_list_btn_stamina_timer" android:src="@drawable/timer_2" android:contentDescription="@string/themeSubTextColor" app:isTintAlways="true" style="@style/ImageButton" />
         </LinearLayout>
