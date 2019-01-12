@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:contentDescription="@string/themeMainBG"
+              xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout style="@style/TopMenu">
+        <com.dnt7.padguide.widget.TintImageButton android:id="@id/dungeon_list_btn_back" android:visibility="gone" android:src="@drawable/arrow_backward" app:isTintAlways="true" style="@style/ImageButtonTopMenu" />
+        <com.dnt7.padguide.widget.TintImageButton android:id="@id/dungeon_list_btn_search" android:src="@drawable/menu_2" app:isTintAlways="false" style="@style/ImageButtonTopMenu" />
+        <EditText android:id="@id/dungeon_list_txt_search" android:hint="@string/dungeon_search_title" style="@style/SearchEditText" />
+        <com.dnt7.padguide.widget.TintImageButton android:id="@id/dungeon_list_btn_reset" android:src="@drawable/x_mark" app:isTintAlways="false" style="@style/ImageButtonTopMenu" />
+        <com.dnt7.padguide.widget.TintImageButton android:id="@id/dungeon_list_btn_favorite" android:src="@drawable/star_2_icon" style="@style/ImageButtonTopMenu" />
+    </LinearLayout>
+    <RelativeLayout android:id="@id/dungeon_list_frame_content" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <TextView android:id="@id/dungeon_list_txt_no_data" style="@style/ListNoDataText" />
+        <com.dnt7.padguide.widget.ScrollButtonListView android:id="@id/dungeon_list_list" android:layout_width="fill_parent" android:layout_height="fill_parent" android:contentDescription="@string/theme" />
+        <View style="@style/ContentsBottomLine" />
+    </RelativeLayout>
+    <RadioGroup android:id="@id/dungeon_list_btn_group" style="@style/BottomMenu">
+        <com.dnt7.padguide.widget.AutoFitRadioButton android:textSize="@dimen/text_size_xlarge" android:text="@string/dungeon_btn_special" style="@style/BottomMenuTextRadioButtonNoBG" />
+        <com.dnt7.padguide.widget.AutoFitRadioButton android:textSize="@dimen/text_size_xlarge" android:text="@string/dungeon_btn_normal" style="@style/BottomMenuTextRadioButtonNoBG" />
+        <com.dnt7.padguide.widget.AutoFitRadioButton android:textSize="@dimen/text_size_xlarge" android:text="@string/dungeon_btn_technical" style="@style/BottomMenuTextRadioButtonNoBG" />
+        <com.dnt7.padguide.widget.AutoFitRadioButton android:textSize="@dimen/text_size_xlarge" android:text="@string/dungeon_btn_coin" style="@style/BottomMenuTextRadioButtonNoBG" />
+        <com.dnt7.padguide.widget.AutoFitRadioButton android:textSize="@dimen/text_size_xlarge" android:text="@string/dungeon_btn_multi" style="@style/BottomMenuTextRadioButtonNoBG" />
+    </RadioGroup>
+</LinearLayout>
