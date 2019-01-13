@@ -17,7 +17,7 @@ public class DownloaderExpansionActivity {
 
     @DexEdit
     private static final a[] B =
-            new a[]{new DownloaderExpansionActivity.a(true, 219, 54656013L)};
+            new a[]{new DownloaderExpansionActivity.a(true, 220, 61094585L)};
 
     @DexIgnore
     private static class a {
