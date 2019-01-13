@@ -8,11 +8,12 @@ public class DownloaderExpansionActivity {
     // When releasing:
     // 1) Update version id/name
     // 2) Sync version id in DownloaderExpansionActivity
-    // 3) Upload APK
-    // 4) BEFORE RELEASING:
+    // 3) Sync version id in com/google/android/vending/expansion/downloader/d.java
+    // 4) Upload APK
+    // 5) BEFORE RELEASING:
     //      Click on the + sign next to the uploaded APK
     //      Select the latest expansion file
-    // 5) Release to internal test
+    // 6) Release to internal test
     // App will now work from internal test or from Android Studio
 
     @DexEdit
