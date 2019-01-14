@@ -24,6 +24,12 @@ public class bf extends b {
 
     @DexWrap
     private void b(int var1) {
+        if (this.h != null && this.h.size() == 10) {
+            // Need to check the size first, can be called while the array is empty, or item has
+            // already been removed.
+            this.h.remove(0);
+        }
+
         if (var1 < 3) {
             // The first three menu items have been hidden, but the first one will be selected by
             // default. If we have any of those three saved / defaulted to selected, adjust the
@@ -32,7 +38,5 @@ public class bf extends b {
             this.ak.check(this.ak.getChildAt(var1).getId());
         }
         b(var1);
-        // This removes the 'support' link from the menu
-        this.h.remove(0);
     }
 }
