@@ -7,12 +7,15 @@ import lanchon.dexpatcher.annotation.DexIgnore;
 public class DownloaderExpansionActivity {
     // When releasing:
     // 1) Update version id/name
-    // 2) Sync version id in DownloaderExpansionActivity
-    // 3) Sync version id in com/google/android/vending/expansion/downloader/d.java
-    // 4) Upload APK
+    // 2) If uploading new expansion pack:
+    //   2a) Sync version id in DownloaderExpansionActivity
+    //   2b) Sync version id in com/google/android/vending/expansion/downloader/d.java
+    // 3) Upload APK
     // 5) BEFORE RELEASING:
     //      Click on the + sign next to the uploaded APK
     //      Select the latest expansion file
+    //      OR
+    //      Upload new expansion file
     // 6) Release to internal test
     // App will now work from internal test or from Android Studio
 
