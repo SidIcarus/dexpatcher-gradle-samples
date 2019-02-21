@@ -39,9 +39,17 @@ public class b {
         k = e + "youtube/";
         m = f + "image_board/";
 
-        String newBase = "http://miru.info/padguide";
-        d = newBase + "/api/";
-        String newBaseImagesE = newBase + "/images/";
+        boolean useDev = false;
+
+        String newApiBase = "http://miru.info/padguide";
+        if (useDev) {
+            d = newApiBase + "/api_dev/";
+        } else {
+            d = newApiBase + "/api/";
+        }
+
+        String newImageBase = "https://f002.backblazeb2.com/file/miru-data/padguide/";
+        String newBaseImagesE = newImageBase + "images/";
         g = newBaseImagesE + "icons/";
         h = newBaseImagesE + "icons/";
         // This was originally under 'texture'
